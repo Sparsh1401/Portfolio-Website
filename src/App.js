@@ -6,7 +6,7 @@ import Experience from "./pages/Experience";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ProjectDisplay from "./pages/ProjectDisplay";
-import Skills from "./components/Skills";
+
 
 function App() {
   return (

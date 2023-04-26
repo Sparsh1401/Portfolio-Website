@@ -5,16 +5,19 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 30px;
+  padding: 20px;
 }
 .projects .projectTitle {
   text-align: center;
   color: #3e497a;
   font-size: 60px;
   font-weight: bolder;
+  margin: 10px;
 }
 
 .projectList {
-  width: 70vw;
+  width: 80vw;
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

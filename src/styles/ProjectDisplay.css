@@ -34,3 +34,22 @@
   font-size: 60px;
   color: #3e497a;
 }
+
+@media only screen and (max-width: 800px) {
+  .project img {
+    width: 400px;
+  }
+
+  .project p{
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .project img {
+    width: 300px;
+  }
+
+  .project p{
+    font-size: 15px;
+  }
+}
