@@ -79,6 +79,7 @@
   overflow: hidden;
   background-color: whitesmoke;
   border-radius: 0.2em;
+  box-sizing: border-box;
 }
 
 .img-container{

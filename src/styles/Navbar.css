@@ -1,5 +1,5 @@
 .navbar {
-  width: 100%;
+  width: 100vw;
   height: 100px;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
   background-repeat: no-repeat;
