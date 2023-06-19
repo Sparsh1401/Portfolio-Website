@@ -50,10 +50,10 @@ function Experience() {
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            Software Devloper Intern - Empiric Media
+            Software Devloper Intern - EDQI 
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            Remote - Mumbai
+            Hybrid - Bengaluru
           </h4>
           <p>Developed the backend infrastructure for 2 projects.</p>
         </VerticalTimelineElement>
