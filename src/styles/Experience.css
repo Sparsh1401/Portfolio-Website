@@ -1,0 +1,97 @@
+/* Experience Page Styles */
+.experience {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 100px; /* Space for navbar */
+  padding-bottom: 50px;
+  background: var(--color-dark-green);
+  overflow-x: hidden;
+}
+
+.experience-title {
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  color: #f0f0f0;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Vertical Timeline Overrides */
+.vertical-timeline::before {
+  background: rgba(196, 255, 0, 0.3) !important; /* Lime glow line */
+  width: 4px !important;
+}
+
+.vertical-timeline-element-content {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+  border-radius: 12px !important;
+}
+
+.vertical-timeline-element-content-arrow {
+  border-right: 7px solid rgba(30, 41, 59, 0.9) !important;
+}
+
+.vertical-timeline-element-icon {
+  box-shadow: 0 0 0 4px var(--color-dark-green), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Mobile Responsive Adjustments */
+@media only screen and (max-width: 1170px) {
+  .vertical-timeline-element-content {
+    margin-left: 0 !important;
+    padding: 1.5em !important;
+    width: 100% !important;
+  }
+  
+  .vertical-timeline-element-icon {
+    display: block !important; /* Ensure icons are visible */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .experience {
+    padding-top: 80px;
+  }
+
+  .experience-title {
+    margin-bottom: 2rem;
+  }
+
+  /* Force animations/visibility on mobile if library hides them */
+  .vertical-timeline-element {
+    margin: 2em 0 !important;
+  }
+
+  .vertical-timeline-element-icon {
+    width: 40px !important;
+    height: 40px !important;
+    left: 10px !important;
+    margin-left: 0 !important;
+  }
+  
+  .vertical-timeline-element-icon svg {
+    width: 20px !important;
+    height: 20px !important;
+    margin-top: -10px !important;
+    margin-left: -10px !important;
+  }
+
+  .vertical-timeline-element-content {
+    margin-left: 60px !important; /* Space for icon */
+    width: calc(100% - 70px) !important;
+  }
+
+  .vertical-timeline-element-content-arrow {
+    display: none !important; /* Hide arrow on mobile for cleaner look */
+  }
+
+  .vertical-timeline-element-title {
+    font-size: 1.1rem !important;
+  }
+
+  .vertical-timeline-element-subtitle {
+    font-size: 0.9rem !important;
+  }
+}

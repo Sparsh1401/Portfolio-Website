@@ -14,13 +14,13 @@ import CustomCursor from "../components/CustomCursor";
 import VimTerminal from "../components/VimTerminal";
 import DiagramPreview from "../components/DiagramPreview";
 import "../styles/Home.css";
-// Lyft/Uber distributed system architecture diagram
-import systemDiagram from "../assets/uber-system-diagram.png";
+import DistributedSystemImg from "../assets/distributed_system.png";
 
 function Home() {
   const heroRef = useRef(null);
   const [isLoading, setIsLoading] = useState(true);
   const [showContent, setShowContent] = useState(false);
+  const [isCardActive, setIsCardActive] = useState(false);
   
   const { scrollYProgress } = useScroll();
   const y = useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
@@ -155,10 +155,11 @@ function Home() {
               <div className="loading-visuals">
                 {/* Capabilities Card */}
                 <motion.div
-                  className="capabilities-card"
+                  className={`capabilities-card ${isCardActive ? 'active' : ''}`}
                   initial={{ opacity: 0, x: -30 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8, delay: 0.6 }}
+                  onClick={() => setIsCardActive(!isCardActive)}
                 >
                   <div className="card-content">
                     <h3 className="capabilities-title">I Build</h3>
@@ -184,18 +185,22 @@ function Home() {
                   
                   {/* System Overlay on Hover */}
                   <div className="system-overlay">
-                    <DiagramPreview
-                      imageSrc={systemDiagram}
+                    <img 
+                      src={DistributedSystemImg} 
+                      alt="Distributed System Architecture" 
+                      className="system-image" 
                     />
+                    <div className="request-particles">
+                      {[...Array(5)].map((_, i) => (
+                        <div key={i} className="request-particle" style={{ animationDelay: `${i * 0.5}s` }} />
+                      ))}
+                    </div>
                   </div>
                 </motion.div>
 
                 {/* Server Visualization */}
                 <motion.div
                   className="server-container"
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.8, delay: 0.6 }}
                 >
                   <div className="server-rack">
                     {/* API Server */}
