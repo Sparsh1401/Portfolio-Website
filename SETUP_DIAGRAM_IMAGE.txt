@@ -1,0 +1,29 @@
+🎯 TO COMPLETE THE SETUP - SAVE YOUR DIAGRAM IMAGE
+===================================================
+
+Your animated diagram component is ready! Just need to add the image:
+
+OPTION 1: Save from your screenshot (Recommended)
+--------------------------------------------------
+1. Save the Uber distributed system diagram you showed me
+2. Name it: uber-system-diagram.png
+3. Move it to: src/assets/uber-system-diagram.png
+
+OPTION 2: If you already have it saved somewhere
+------------------------------------------------
+Tell me the path and I'll update the code to use it!
+
+OPTION 3: Use a URL (Temporary)
+-------------------------------
+If you have it hosted online, I can use the URL directly.
+
+Once you save the image, I'll update line 186 in Home.js to:
+  imageSrc={require("../assets/uber-system-diagram.png")}
+
+The animation is already working and will show:
+✨ Animated data flows through the system
+✨ Pulsing service nodes (Kafka, Redis, Spark)
+✨ Floating data particles
+✨ Green glowing paths matching your portfolio theme
+
+Currently using a placeholder URL that will be replaced with your actual diagram.

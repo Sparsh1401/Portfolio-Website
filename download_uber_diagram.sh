@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo "🎯 To save the Uber system diagram image:"
+echo ""
+echo "Option 1: Right-click and Save"
+echo "   1. Right-click on the diagram image in your browser/screenshot"
+echo "   2. Save it as 'uber-system-diagram.png'"
+echo "   3. Move it to this folder: $(pwd)/src/assets/"
+echo ""
+echo "Option 2: Drag and Drop"
+echo "   1. Take a screenshot of the diagram"
+echo "   2. Save it to: $(pwd)/src/assets/uber-system-diagram.png"
+echo ""
+echo "Once saved, I'll update the code automatically!"
+echo ""
+echo "Expected path: $(pwd)/src/assets/uber-system-diagram.png"
