@@ -14,7 +14,7 @@ import CustomCursor from "../components/CustomCursor";
 import VimTerminal from "../components/VimTerminal";
 import DiagramPreview from "../components/DiagramPreview";
 import "../styles/Home.css";
-import DistributedSystemImg from "../assets/distributed_system.png";
+import DistributedSystemImg from "../assets/uber-system-diagram.png";
 
 function Home() {
   const heroRef = useRef(null);
